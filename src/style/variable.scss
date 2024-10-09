@@ -1,0 +1,14 @@
+// 字号
+$F_MAIN: 14px;
+
+// 颜色
+$C_MAIN: #2080f7;
+
+// inset
+@mixin MIXIN_INSET($t: 0, $r: $t, $b: $t, $l: $r) {
+  position: absolute;
+  top: $t;
+  right: $r;
+  bottom: $b;
+  left: $l;
+}
