@@ -29,10 +29,7 @@ http.interceptors.response.use(
     })
   },
   function (error) {
-    if (error.message.includes('timeout')) {
-      // 多语言需要自己在项目中配置
-      // Message.error('请求超时，请重试！')
-    }
+    if (error.message.includes('timeout'))
     return Promise.reject(error)
   },
 )
